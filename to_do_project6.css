@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+.heading{
+    font-family: 'Neucha', cursive;
+    position: relative;
+    top: 9rem ;
+    left: 16rem;
+    font-size: 3rem;
+}
+.plusBox{
+    background-color: #F5980B;
+}
+#input{
+    background-color: #d117a9;
+    position: relative;
+    padding: 1rem;
+    left: 24rem;
+    top: 12rem;
+    height: 8rem;
+    width: 30rem;
+    border: solid rgb(151, 15, 15);
+    border-radius: 18rem;
+    font-size: 1.5rem;
+}
+#add{
+    background-color: #eb1c26;
+    position: relative;
+    left: 24rem;
+    top: 13rem;
+    height: 10rem;
+    width: 6rem;
+    border: solid black;
+    border-radius: 18rem;
+    font-size: 1.5rem;
+
+}
+body{
+    background-color: #17c8e7;
+}
+.show{
+    /* background-color: #D97706; */
+    position: relative;
+    left: 31rem;
+    top:14rem;
+    font-size: 2rem;
+
+}

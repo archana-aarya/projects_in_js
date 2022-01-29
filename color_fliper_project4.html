@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color fliper</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+</head>
+<style>
+    #output{
+        border: 2px solid black;
+        width:1250px;
+        height: 550px;
+    }
+    #change{
+        background-color:blueviolet;
+        padding: 1rem 6rem;
+        border-radius: 2rem;
+    }
+    #box{
+        background-color:skyblue;
+        padding: 1rem 25rem;
+        border-radius: 2rem;
+    }
+
+</style>
+<body>
+    <!-- <button id="box">"WHICH COLOR YOU WANT?"</button> -->
+    <input id="box" type="Enter the color">
+    <button id="change">CHANGE</button>
+    <p id="output" style="border-radius: 1rem;"></p>
+
+
+    
+</body>
+<script>
+    var box=document.querySelector("#box");
+    var btn=document.querySelector("#change");
+    var output=document.querySelector("#output")
+    
+
+function chnagecolor(){
+    var b=box.value
+    // console.log(b)
+    output.style.backgroundColor=b
+}
+    btn.addEventListener("click",chnagecolor)
+     
+
+
+
+</script>
+</html>

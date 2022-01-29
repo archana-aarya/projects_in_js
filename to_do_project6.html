@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do by Archana aarya </title>
+    <link rel="stylesheet" href="to_do_project6.css">
+</head>
+<body>
+    <h1 class="heading" >💃💃TO DO TASK BY ARCHANA AARYA💃💃</h1>
+    <input id="input" type="text"  placeholder="Enter your task to do">
+    <button id="add" onclick="newElement()" >+</button>
+    <div class="todos" id="toDoContainer"></div>
+</body>
+<script>
+    toDoInput=document.getElementById("input")
+    document.getElementById("add");
+    toDoC=document.getElementById("toDoContainer")
+    function newElement() {
+        if(input.value==""){
+            alert("Please Enter someting")
+        }
+        else{
+        var newE = document.createElement("p"); 
+        var newB = document.createElement("button")
+        newB.classList.add("plusBox")    
+        newE.innerText=toDoInput.value
+        newB.innerText="X"       
+        toDoC.appendChild(newE)
+        toDoC.appendChild(newB)
+        toDoC.classList.add("show")
+        newB.addEventListener("click",function removeToDoList() {
+            toDoC.removeChild(newE)
+            toDoC.removeChild(newB)
+        })
+        console.log(toDoC);
+        toDoInput.value=""
+        }
+    }
+</script>
+</html>
+
+
+
+
